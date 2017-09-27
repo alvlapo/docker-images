@@ -1,5 +1,5 @@
 IMAGE_NAME=alvlapo/rails
-VERSION=1.0
+VERSION=`git describe --tags`
 
 build:
 	docker build -t $(IMAGE_NAME):$(VERSION) --rm .
